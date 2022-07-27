@@ -1,0 +1,29 @@
+2. What is Git?
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+
+3.How to:
+ a.git init: The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
+
+ b. git add: When we create, modify or delete a file, these changes will happen in our local and won't be included in the next commit (unless we change the configurations).
+We need to use the git add command to include the changes of a file(s) into our next commit. 
+To add a single file: git add <file>
+To add everything at once: git add -A
+
+ c. git commit: Git commit is like setting a checkpoint in the development process which you can go back to later if needed.
+We also need to write a short message to explain what we have developed or changed in the source code.
+git commit -m "commit message"
+Important: Git commit saves your changes only locally.
+
+ d. git stash: Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+
+ e. git reset: The git reset command is a complex and versatile tool for undoing changes. It has three primary forms of invocation. These forms correspond to command line arguments --soft, --mixed, --hard. The three arguments each correspond to Git's three internal state management mechanism's, The Commit Tree (HEAD), The Staging Index, and The Working Directory.
+
+
+4. What is gitignore?
+Ignored files are tracked in a special file named .gitignore that is checked in at the root of your repository. There is no explicit git ignore command: instead the .gitignore file must be edited and committed by hand when you have new files that you wish to ignore. .gitignore files contain patterns that are matched against file names in your repository to determine whether or not they should be ignored.
+
+
+5. What is branch in git?
+A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master . As you start making commits, you're given a master branch that points to the last commit you made. Every time you commit, the master branch pointer moves forward automatically.
+
